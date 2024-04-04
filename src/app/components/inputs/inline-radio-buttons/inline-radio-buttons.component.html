@@ -1,0 +1,9 @@
+<div class="tab-btn"
+  *ngFor="let tab of options; let i=index"
+  #options
+  (click)="onTabSelected(i)"
+  [ngClass]="{'active': selectedIndex === i}">
+  <span *ngIf="tab.name !== ''">{{tab.name | translation}}</span>
+  <i *ngIf="tab.id === '' && tab.name === ''" class="fa-solid fa-xmark"></i>
+</div>
+<div #highlighter class="highlighter"></div>

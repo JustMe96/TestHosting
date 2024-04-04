@@ -1,0 +1,13 @@
+<app-header [transparent]="true" [title]="'Aggiungi Filiera'" [showHomeButton]="true"
+  [backRoute]="'/chains'"></app-header>
+
+<app-button [loading]="loading" class="right save-btn {{changes ? '' : 'hide'}}" background="primary" [text]="'Save'"
+  (click)="save()"></app-button>
+
+<div class="divider-1"></div>
+
+<div class="page-content-padding">
+  <text-input [placeholder]="'Nome Filiera'" [(value)]="chain.name" (valueChange)="changes = true"></text-input>
+  <div class="divider-1"></div>
+  <app-dropdown [placeholder]="'Filiera di appartenenza'" [options]="chainOptions" [(value)]="selectedChainInfo" (valueChange)="changes = true"></app-dropdown>
+</div>

@@ -1,0 +1,32 @@
+:host.dialog-overlay {
+  background-color: transparent;
+}
+
+.loader {
+  position: absolute;
+  z-index: 41;
+  top: unset;
+  bottom: 4rem;
+  left: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background);
+  border-radius: 50%;
+  box-shadow: var(--box-shadow);
+  transition: all .2s;
+  transform: translate(-50%, calc(4rem + 100%));
+  opacity: 0;
+}
+
+:host.active .loader {
+  transform: translate(-50%, 0);
+  opacity: 1;
+}
+
+app-spinner {
+  --spinner-size: 30px;
+  --spinner-stroke-width: 2px;
+}

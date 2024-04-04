@@ -1,0 +1,7 @@
+<header #header (click)="toggleCompress()">
+  <ng-content select="app-accordion-header"></ng-content>
+  <app-button *ngIf="!keepOpen" class="icon arrow" [icon]="'fa-solid fa-caret-down'" (click)="toggleCompress()"></app-button>
+</header>
+<div #more_info class="more-info" [ngClass]="{'compressed': compressed}">
+  <ng-content select="app-accordion-content"></ng-content>
+</div>

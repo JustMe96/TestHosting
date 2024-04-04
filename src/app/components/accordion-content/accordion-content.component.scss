@@ -1,0 +1,8 @@
+:host {
+  --padding: .5rem;
+
+  width: calc(100% - var(--padding));
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}

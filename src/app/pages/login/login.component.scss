@@ -1,0 +1,15 @@
+section {
+  width: min(calc(100% - 2rem), var(--max-input-width));
+  height: 100%;
+  padding-inline: 1rem;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+app-logo {
+  --size: 15rem;
+}

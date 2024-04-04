@@ -1,0 +1,29 @@
+.user-card {
+  width: calc(100% - 2rem);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1rem;
+
+  .user-details {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+    h2 {
+      font-weight: normal;
+    }
+
+    * {
+      margin: 0;
+    }
+  }
+}
+
+.settings-list {
+  width: 100%;
+}
+
+p {
+  margin: 0;
+}

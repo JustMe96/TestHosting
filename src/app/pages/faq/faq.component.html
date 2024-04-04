@@ -1,0 +1,8 @@
+<app-header [transparent]="true" [title]="'FAQs'" [backRoute]="'/settings'">
+  <app-button class="icon" [icon]="'fa-solid fa-plus'" routerLink="/add-chain"></app-button>
+</app-header>
+
+<div *ngIf="(!faqs || faqs.length === 0) && !utils.loading" class="placeholder">
+  <p class="subtitle">Non ci sono FAQ per ora.</p>
+  <app-button [icon]="'fa-solid fa-plus'" [text]="'Aggiungi'" background="primary"></app-button>
+</div>

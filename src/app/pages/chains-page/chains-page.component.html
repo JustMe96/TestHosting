@@ -1,0 +1,22 @@
+<app-header [transparent]="true" [title]="'Filiere'" [backRoute]="'/settings'">
+  <app-button class="icon" [icon]="'fa-solid fa-plus'" routerLink="/add-chain"></app-button>
+</app-header>
+
+<header>
+  <div class="filters">
+    <app-button #filters_btn class="icon" [icon]="'fa-solid fa-bars-staggered'"></app-button>
+    <floating-panel [trigger]="filters_btn.hostElem">
+      <app-dropdown [options]="chainOptions" [(value)]="filters.chainOption" (valueChange)="search()" [placeholder]="'Seleziona Filiera'"></app-dropdown>
+      <app-button [text]="'Cancella Filtri'" class="right" text-color="error" (click)="clearFilters()"></app-button>
+    </floating-panel>
+  </div>
+  <app-searchbar [(search)]="filters.search" (searchChange)="search()"></app-searchbar>
+</header>
+
+<div class="divider-1"></div>
+<div class="line"></div>
+
+<!-- USER LIST -->
+<div *ngIf="selectedChains && selectedChains.length !== 0" class="scroll-content">
+  <app-chain-item-preview *ngFor="let chain of selectedChains; let i = index" [chain]="chain" (onDelete)="deleteChain(chain.code)"></app-chain-item-preview>
+</div>

@@ -1,0 +1,73 @@
+$bottom: 4rem;
+
+:host {
+  position: absolute;
+  width: 100vw;
+  z-index: 100;
+  bottom: $bottom;
+  left: 0;
+  transition: all .2s;
+  transition-timing-function: var(--bouncy-transition);
+  pointer-events: none;
+  display: block;
+}
+
+:host.close {
+  transform: translateY(calc(100% + $bottom + 1rem));
+}
+
+#toast {
+  font-size: .8em;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: max-content;
+  height: max-content;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: 1rem;
+  background-color: var(--background-contrast);
+  padding: 1rem;
+  color: var(--background);
+  border-radius: 10px;
+  overflow: hidden;
+
+  i {
+    width: 20px;
+    height: 20px;
+  }
+
+  span {
+    width: max-content;
+    display: block;
+  }
+}
+
+:host #toast.toast-info {
+  color: var(--background);
+  background-color: var(--background-contrast);
+}
+
+:host #toast.toast-check {
+  color: var(--success-contrast);
+  background-color: var(--success);
+}
+
+:host #toast.toast-warning {
+  color: var(--warning-contrast);
+  background-color: var(--warning);
+}
+
+:host #toast.toast-error {
+  color: var(--error-contrast);
+  background-color: var(--error);
+}
+
+@media screen and (max-width: 768px) {
+
+  #toast {
+    margin-right: auto;
+    max-width: 90vw;
+  }
+
+}

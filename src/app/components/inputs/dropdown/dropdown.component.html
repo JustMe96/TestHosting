@@ -1,0 +1,6 @@
+<select [(ngModel)]="value" (ngModelChange)="onValueChanged($event)">
+  <option *ngFor="let opt of options; let i = index" value="{{opt.id}}">{{opt.name | translation}}</option>
+</select>
+<div [ngClass]="{'hide': value && value !== ''}" class="placeholder">{{placeholder | translation}}</div>
+<p>{{(!value || value === '') ? '' : selectedValue.name | translation}}</p>
+<i class="fa-solid fa-caret-down"></i>

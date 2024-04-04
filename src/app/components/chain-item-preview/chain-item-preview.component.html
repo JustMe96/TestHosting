@@ -1,0 +1,14 @@
+<app-accordion>
+  <!-- HEADER -->
+  <app-accordion-header>
+    <h3>{{chain.name}}</h3>
+  </app-accordion-header>
+  <!-- CONTENT -->
+  <app-accordion-content>
+    <app-info-item [key]="'Categorie:'" [actions]="categories" (actionClick)="navigation.navigate('/add-category', {id: $event})"></app-info-item>
+    <div class="actions-end">
+      <app-button class="right icon" [icon]="'fa-solid fa-pen-to-square'" [routerLink]="['/add-chain', {id: chain.code}]"></app-button>
+      <app-button class="icon" text-color="primary" [icon]="'fa-solid fa-trash-can'" (click)="onDelete.emit()"></app-button>
+    </div>
+  </app-accordion-content>
+</app-accordion>

@@ -1,0 +1,70 @@
+:host.page {
+  width: calc(100% - 2rem);
+  padding-inline: 1rem;
+}
+
+.save-btn {
+  transition: transform .5s, opacity .5s;
+}
+
+.save-btn.hide {
+  pointer-events: none;
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.grid {
+  width: 100%;
+  max-width: var(--max-input-width);
+  display: grid;
+  grid-template-areas:
+    'role role'
+    'name surname'
+    'email email'
+    'cel cel';
+  gap: 1rem;
+}
+
+.grid > *:nth-child(1) {
+  grid-area: role;
+}
+
+.grid > *:nth-child(2) {
+  grid-area: name;
+}
+
+.grid > *:nth-child(3) {
+  grid-area: surname;
+}
+
+.grid > *:nth-child(4) {
+  grid-area: email;
+}
+
+.grid > *:nth-child(5) {
+  grid-area: cel;
+}
+
+table {
+  width: 100%;
+  max-width: 650px;
+  text-align: center;
+}
+
+table tr th {
+  font-size: .8em;
+  font-weight: 400;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-list-item-color);
+}
+
+table tr > td:first-child {
+  text-align: left;
+}
+
+h1 {
+  width: 100%;
+  text-align: left;
+  margin: 2rem 0;
+  font-weight: 400;
+}

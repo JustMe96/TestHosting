@@ -1,0 +1,41 @@
+:host {
+  --spinner-size: 35px;
+  --spinner-stroke-width: 3px;
+  --spinner-clr: var(--background-contrast);
+  --spinner-rail-clr: var(--on-background);
+
+  display: block;
+  width: calc(var(--spinner-size) + 2 * var(--spinner-stroke-width));
+  height: calc(var(--spinner-size) + 2 * var(--spinner-stroke-width));
+}
+
+.holder {
+  position: relative;
+  display: block;
+  width: calc(var(--spinner-size) + 2 * var(--spinner-stroke-width));
+  height: calc(var(--spinner-size) + 2 * var(--spinner-stroke-width));
+}
+
+.spinner-rail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: var(--spinner-size);
+  height: var(--spinner-size);
+  border: var(--spinner-stroke-width) solid var(--spinner-rail-clr);
+  border-radius: 50%;
+}
+
+.spinner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: var(--spinner-size);
+  height: var(--spinner-size);
+  border: var(--spinner-stroke-width) solid var(--spinner-clr);
+  border-color: transparent var(--spinner-clr) var(--spinner-clr) var(--spinner-clr);
+  border-radius: 50%;
+  animation: rotate 1s linear infinite;
+}

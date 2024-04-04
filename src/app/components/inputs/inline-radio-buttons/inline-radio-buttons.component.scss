@@ -1,0 +1,66 @@
+:host {
+  --padding: .65rem .8rem;
+  --font-size: 1em;
+
+  width: max-content;
+  height: max-content;
+  overflow: scroll hidden;
+  display: flex;
+  align-items: center;
+  position: relative;
+  isolation: isolate;
+  border-radius: 10px;
+  box-shadow: inset var(--box-shadow);
+  margin-block: .3rem;
+}
+
+.tab-btn {
+  padding: var(--padding);
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all .2s;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    text-transform: capitalize;
+    font-size: .8em;
+    transition: all .2s;
+    text-align: center;
+    font-weight: 300;
+  }
+
+  i {
+    font-size: 18px;
+  }
+}
+
+.tab-btn:active {
+  opacity: .6;
+}
+
+.tab-btn.active span,
+.tab-btn.active i {
+  color: var(--secondary-contrast);
+}
+
+.highlighter {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  min-width: 20px;
+  background-color: var(--secondary);
+  border-radius: 10px;
+  transition: all .3s;
+  transform: translateY(-50%);
+}
+
+@media (hover: hover) {
+  .tab-btn:not(.active):hover {
+    background-color: var(--button-hover-color);
+  }
+}

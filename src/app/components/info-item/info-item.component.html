@@ -1,0 +1,5 @@
+<h3 class="text-overflow-ellipsis">{{key}}</h3>
+<p *ngIf="value" class="text-overflow-ellipsis">{{value}}</p>
+@if(actions && actions.length > 0) {
+  <app-button *ngFor="let action of actions" class="small" [text]="action.name" (click)="actionClick.emit(action.id)"></app-button>
+}

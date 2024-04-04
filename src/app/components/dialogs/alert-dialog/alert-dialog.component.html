@@ -1,0 +1,9 @@
+<div class="dialog">
+  <h3 *ngIf="data.title !== ''">{{data.title}}</h3>
+  <p *ngIf="data.message !== ''">{{data.message}}</p>
+  <div class="actions-end">
+    <app-button *ngFor="let action of data.actions" [text]="action.name" (click)="onActionClick(action)"></app-button>
+    <!-- Main Action-->
+    <app-button [text]="data.mainAction.name" background="primary" (click)="onActionClick(data.mainAction)"></app-button>
+  </div>
+</div>

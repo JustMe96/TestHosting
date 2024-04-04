@@ -1,0 +1,36 @@
+<app-header [transparent]="true" [title]="'Aggiungi Admin'" [showHomeButton]="true"
+  [backRoute]="'/chains'"></app-header>
+
+<app-button [loading]="loading" class="right save-btn {{changes ? '' : 'hide'}}" background="primary" [text]="'Save'"
+  (click)="save()"></app-button>
+
+<h1>Info</h1>
+
+<div class="grid">
+  <app-dropdown [placeholder]="'Ruolo'" [options]="roleTypes" [(value)]="user.role_code"
+    (valueChange)="changes = true"></app-dropdown>
+  <text-input [placeholder]="'Nome'" [(value)]="user.first_name" (valueChange)="changes = true"></text-input>
+  <text-input [placeholder]="'Cognome'" [(value)]="user.last_name" (valueChange)="changes = true"></text-input>
+  <text-input [placeholder]="'Email'" [(value)]="user.email" (valueChange)="changes = true"></text-input>
+  <text-input [type]="'tel'" [placeholder]="'Tel'" [(value)]="user.phone" (valueChange)="changes = true"></text-input>
+</div>
+
+<div class="divider-3"></div>
+
+@if(user.role_code === 'ADMIN') {
+<h1>Permessi</h1>
+<table>
+  <tr>
+    <th></th>
+    <th>Aggiungi/Modifica</th>
+  </tr>
+
+  <tr *ngFor="let cp of categoryPermissions; let i = index">
+    <td>{{cp.name}}</td>
+    <td>
+      <app-checkbox [toggle]="true" class="margin-left"></app-checkbox>
+    </td>
+  </tr>
+</table>
+<div class="divider-2"></div>
+}

@@ -1,0 +1,56 @@
+<app-header></app-header>
+<div class="user-card">
+  <app-avatar></app-avatar>
+  <div class="user-details">
+    <h2>Nome Cognome</h2>
+    <p class="subtitle">Ruolo (Super Admin / admin)</p>
+  </div>
+</div>
+
+<div class="divider-2"></div>
+
+<div class="settings-list">
+  <app-list-item [icon]="'fa-solid fa-user-secret'" [enableArrow]="true" routerLink="/admin">
+    <p>Admin</p>
+  </app-list-item>
+
+  <app-list-item [icon]="'fa-regular fa-circle-user'" [enableArrow]="true" routerLink="/users">
+    <p>Utenti</p>
+  </app-list-item>
+
+  <app-list-item [icon]="'fa-solid fa-store'" [enableArrow]="true">
+    <p>Aziende</p>
+  </app-list-item>
+
+  <app-list-item [icon]="'fa-regular fa-face-frown-open'" [enableArrow]="true">
+    <p>Reclamo Azienda</p>
+  </app-list-item>
+
+  <app-list-item [icon]="'fa-solid fa-link'" [enableArrow]="true" routerLink="/chains">
+    <p>Filiere</p>
+  </app-list-item>
+
+  <app-list-item [icon]="'fa-solid fa-cube'" [enableArrow]="true" routerLink="/categories">
+    <p>Categorie</p>
+  </app-list-item>
+
+  <app-list-item [icon]="'fa-solid fa-wine-bottle'" [enableArrow]="true" routerLink="/products">
+    <p>Prodotti</p>
+  </app-list-item>
+
+  <app-list-item [icon]="'fa-regular fa-credit-card'" [enableArrow]="true">
+    <p>Abbonamenti</p>
+  </app-list-item>
+
+  <app-list-item [icon]="'fa-solid fa-earth-americas'" [enableArrow]="true">
+    <p>Contenuti e traduzioni</p>
+  </app-list-item>
+
+  <app-list-item [icon]="'fa-solid fa-question'" [enableArrow]="true" routerLink="/faq">
+    <p>FAQ</p>
+  </app-list-item>
+
+  <app-list-item [icon]="'fa-solid fa-arrow-right-from-bracket'" [enableArrow]="true">
+    <p>Log out</p>
+  </app-list-item>
+</div>

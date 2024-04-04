@@ -1,0 +1,53 @@
+:host {
+  --padding-left: 1rem;
+  --padding-right: 1rem;
+
+  width: calc(100% - (var(--padding-left) + var(--padding-right)));
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-left: var(--padding-left);
+  padding-right: var(--padding-right);
+  padding-block: .3rem;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+:host.no-padding {
+  padding: 0 !important;
+}
+
+:host.flex {
+  width: unset;
+  flex: 1;
+}
+
+:host.vertical {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .3rem;
+
+  p {
+    font-size: .8em;
+    max-width: 100%;
+  }
+}
+
+:host.small * {
+  font-size: .8em;
+}
+
+p {
+  margin: 0;
+}
+
+.actions {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  app-button {
+    margin: .3rem;
+  }
+}

@@ -1,0 +1,10 @@
+<i *ngIf="icon" class="{{icon}}"></i>
+<div class="input-wrapper">
+  <input #input
+    [type]="type"
+    [(ngModel)]="value"
+    (ngModelChange)="valueChange.emit(value)"
+    (focus)="isFocused = true"
+    (blur)="isFocused = false">
+  <div class="placeholder">{{placeholder}}</div>
+</div>

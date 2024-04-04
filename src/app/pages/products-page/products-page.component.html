@@ -1,0 +1,24 @@
+<app-header [transparent]="true" [title]="'Products'" [backRoute]="'/settings'">
+  <app-button class="icon" [icon]="'fa-solid fa-plus'" routerLink="/add-category"></app-button>
+</app-header>
+
+<header>
+  <div class="filters">
+    <app-button #filters_btn class="icon" [icon]="'fa-solid fa-bars-staggered'"></app-button>
+    <floating-panel [trigger]="filters_btn.hostElem" (onOpen)="updateFiltersUI(active_filter)">
+      <inline-radio-buttons #active_filter [options]="activeOptions"></inline-radio-buttons>
+    </floating-panel>
+  </div>
+  <app-searchbar [(search)]="filters.search" (searchChange)="search()"></app-searchbar>
+</header>
+
+<div class="divider-1"></div>
+<div class="line"></div>
+
+<div class="page-flex-content">
+
+</div>
+
+<div *ngIf="selectedProducts && selectedProducts.length !== 0" class="scroll-content">
+  <!-- <app-category-item-preview *ngFor="let category of selectedProducts; let i = index" [category]="category" (onDelete)="deleteChain(category.code)"></app-category-item-preview> -->
+</div>

@@ -1,0 +1,43 @@
+:host {
+  --z-index: 20;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: var(--z-index);
+  transform: translate(-50%, -50%);
+  width: 200vw;
+  height: 200vh;
+  pointer-events: none;
+  background-color: transparent;
+  transition: all .15s;
+}
+
+:host.active .overlay {
+  pointer-events: all !important;
+}
+
+.options-panel {
+  --translation: translate(0, 100%);
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: var(--z-index);
+  background-color: var(--background);
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--box-shadow);
+  transition: all .2s;
+  transform: var(--translation) scale(0);
+  opacity: 0;
+}
+
+:host.active .options-panel {
+  transform: var(--translation) scale(1);
+  opacity: 1;
+}

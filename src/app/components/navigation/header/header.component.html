@@ -1,0 +1,13 @@
+<app-button *ngIf="backRoute && !transparent" (click)="onBackClick()" text-color="primary-contrast" class="icon"
+  [icon]="'fa-solid fa-chevron-left'"></app-button>
+<app-button *ngIf="backRoute && transparent" (click)="onBackClick()" class="icon"
+  [icon]="'fa-solid fa-chevron-left'"></app-button>
+<app-logo *ngIf="!hideLogo && !title && !transparent"></app-logo>
+<h3 *ngIf="title">{{title}}</h3>
+<div class="actions-end">
+  <ng-content></ng-content>
+  <app-button *ngIf="showHomeButton && !transparent" text-color="primary-contrast" routerLink="/settings" class="icon"
+    [icon]="'fa-solid fa-house'"></app-button>
+  <app-button *ngIf="showHomeButton && transparent" class="icon" routerLink="/settings"
+    [icon]="'fa-solid fa-house'"></app-button>
+</div>

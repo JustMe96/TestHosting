@@ -1,0 +1,157 @@
+:host {
+  --padding-block: .7rem;
+  --padding-inline: 1rem;
+
+  font-size: 1em;
+  position: relative;
+}
+
+app-spinner {
+  --spinner-size: 16px;
+  --spinner-stroke-width: 2px;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  opacity: 0;
+}
+
+:host.stretch {
+  width: 100%;
+
+  button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+:host.loading {
+  pointer-events: none;
+
+  button * {
+    opacity: 0;
+  }
+
+  app-spinner {
+    opacity: 1;
+  }
+}
+
+:host.small {
+  --padding-block: 0.5rem;
+  --padding-inline: .7rem;
+
+  button {
+    background-color: var(--button-hover-color);
+  }
+}
+
+:host.small-text {
+  font-size: .8em;
+}
+
+:host.raised button {
+  box-shadow: var(--box-shadow);
+}
+
+:host.rounded button {
+  border-radius: 1.5rem;
+}
+
+:host.large button {
+  --padding-block: 1rem;
+  --padding-inline: 1.2rem;
+  font-size: var(--font-size);
+
+  span,
+  i {
+    font-size: 1em;
+  }
+}
+
+:host.right {
+  margin-left: auto;
+}
+
+:host[text-color="primary"] button {
+
+  span,
+  i {
+    color: var(--primary);
+  }
+}
+
+:host[text-color="primary-contrast"] button {
+
+  span,
+  i {
+    color: var(--primary-contrast);
+  }
+}
+
+:host[text-color="error"] button {
+
+  span,
+  i {
+    color: var(--error);
+  }
+}
+
+:host[background="primary"] button {
+  background-color: var(--primary);
+
+  span,
+  i {
+    color: var(--primary-contrast);
+  }
+}
+
+:host.icon button {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 50%;
+  justify-content: center;
+
+  i {
+    font-size: 18px;
+  }
+}
+
+button {
+  padding: var(--padding-block) var(--padding-inline);
+  background-color: transparent;
+  color: var(--text-color);
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 10px;
+  transition: all .1s;
+  cursor: pointer;
+  font-size: var(--font-size);
+}
+
+button span,
+button i {
+  font-size: .8em;
+}
+
+button:active {
+  opacity: .6;
+}
+
+@media (hover: hover) {
+  @media (hover: hover) {
+    :host:hover button {
+      background-color: var(--button-hover-color);
+    }
+
+    :host[background="primary"]:hover button {
+      background-color: var(--primary-tint);
+    }
+  }
+}

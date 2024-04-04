@@ -1,0 +1,20 @@
+:host {
+  --size: 85px;
+
+  width: var(--size);
+  height: var(--size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #D9D9D9;
+}
+
+:host.small {
+  --size: 45px;
+}
+
+i {
+  color: white;
+  font-size: calc(var(--size) / 3);
+}

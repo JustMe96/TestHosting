@@ -1,0 +1,48 @@
+:host {
+  width: calc(100% - 2rem);
+  max-width: var(--max-input-width);
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  position: relative;
+}
+
+:host.flex {
+  flex: 1;
+}
+
+select {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  appearance: none;
+  opacity: 0;
+}
+
+.placeholder {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translate(0, -50%);
+  color: var(--text-faded);
+  font-size: .8em;
+  transition: all .2s;
+  pointer-events: none;
+}
+
+.placeholder.hide {
+  top: 10px;
+}
+
+p {
+  padding-top: 1rem;
+  margin: 0;
+  font-weight: 400;
+}

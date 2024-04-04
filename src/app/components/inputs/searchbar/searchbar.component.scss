@@ -1,0 +1,37 @@
+:host {
+  --height: 2.5rem;
+
+  position: relative;
+  flex: 1;
+  max-width: var(--max-input-width);
+  height: var(--height);
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+}
+
+:host.flex {
+  flex: 1;
+}
+
+input {
+  width: calc(100% - 2rem);
+  height: var(--height);
+  padding-inline: 1rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+input::placeholder {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 1rem;
+  transform: translate(0, -50%);
+  color: var(--text-faded);
+  font-size: .8em;
+  transition: all .2s;
+  pointer-events: none;
+}

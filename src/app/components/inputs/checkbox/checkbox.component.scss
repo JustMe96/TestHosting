@@ -1,0 +1,84 @@
+:host {
+  --circle-size: 28px;
+
+  --toggle-width: 50px;
+  --toggle-height: 32px;
+  --toggle-padding: 2px;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: max-content;
+  height: max-content;
+  margin: .5rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.circle-outline {
+  width: var(--circle-size);
+  height: var(--circle-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  transition: all .2s;
+  overflow: hidden;
+}
+
+i {
+  font-size: 12px;
+  color: var(--primary-contrast);
+  transition: all .5s var(--bouncy-transition);
+  transform: translate(0, 3rem);
+  opacity: 0;
+}
+
+:host.enabled .circle-outline {
+  background-color: var(--primary);
+  border-color: var(--primary-shade);
+
+  i {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+/* TOGGLE STYLE */
+.toggle {
+  position: relative;
+  width: var(--toggle-width);
+  height: var(--toggle-height);
+  border-radius: calc(var(--toggle-height) / 2);
+  box-shadow: inset var(--box-shadow);
+  background-color: var(--toggle-background-color);
+  transition: all .3s;
+}
+
+.toggle-handle {
+  --toggle-handle-size: calc(var(--toggle-height) - 2 * var(--toggle-padding));
+  position: absolute;
+  top: 50%;
+  left: var(--toggle-padding);
+  width: var(--toggle-handle-size);
+  height: var(--toggle-handle-size);
+  border-radius: 50%;
+  background-color: var(--background);
+  transition: all .3s;
+  transform: translate(0, -50%);
+}
+
+:host.enabled .toggle {
+  background-color: var(--primary);
+}
+
+:host.enabled .toggle .toggle-handle {
+  justify-content: flex-end;
+  left: calc(var(--toggle-width) - var(--toggle-handle-size) - var(--toggle-padding));
+}
+
+p {
+  margin: 0;
+  font-size: 1em;
+}

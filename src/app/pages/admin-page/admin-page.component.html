@@ -1,0 +1,23 @@
+<app-header [transparent]="true" [title]="'Admin'" [backRoute]="'/settings'">
+  <app-button class="icon" [icon]="'fa-solid fa-plus'" [routerLink]="['/add-admin', {isAdmin: true}]"></app-button>
+</app-header>
+
+<div *ngIf="(!users || users.length === 0) && !utils.loading" class="placeholder">
+  <div class="divider-3"></div>
+  <p class="subtitle">Non ci sono utenti registrati per ora.</p>
+  <app-button [icon]="'fa-solid fa-plus'" [text]="'Aggiungi'" background="primary" [routerLink]="['/add-admin', {isAdmin: true}]"></app-button>
+</div>
+
+@if(users && users.length > 0 && !utils.loading) {
+  <div class="line"></div>
+  <app-list-item *ngFor="let user of users; let i = index" @deleteFromList>
+    <div class="text-contet">
+      <h2>{{user.first_name || 'Nessun Nome'}} {{user.last_name || ''}}</h2>
+      <p class="subtitle">{{user.role_code}}</p>
+    </div>
+    <div class="actions-end">
+      <app-button class="icon" [icon]="'fa-solid fa-pen-to-square'" [routerLink]="['/add-admin', {id: user.code}]"></app-button>
+      <app-button text-color="error" class="icon delete-btn" [icon]="'fa-solid fa-trash-can'" (click)="deleteUser(i)"></app-button>
+    </div>
+  </app-list-item>
+}

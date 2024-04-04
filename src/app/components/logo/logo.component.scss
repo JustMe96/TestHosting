@@ -1,0 +1,16 @@
+:host {
+  --size: 10rem;
+
+  width: var(--size);
+  display: flex;
+  align-items: center;
+}
+
+:host.primary svg path {
+  fill: var(--primary);
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}

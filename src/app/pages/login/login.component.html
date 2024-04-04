@@ -1,0 +1,8 @@
+<section>
+  <app-logo class="primary"></app-logo>
+  <div class="divider-3"></div>
+  <text-input [placeholder]="'User'" [(value)]="email" [type]="'email'"></text-input>
+  <text-input [placeholder]="'Password'" [(value)]="password" [type]="'password'"></text-input>
+  <div class="divider-2"></div>
+  <app-button (click)="login()" [text]="'Login'" class="right stretch large" background="primary"></app-button>
+</section>

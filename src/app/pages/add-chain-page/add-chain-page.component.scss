@@ -1,0 +1,10 @@
+.save-btn {
+  transition: transform .5s, opacity .5s;
+  margin-right: 1rem;
+}
+
+.save-btn.hide {
+  pointer-events: none;
+  transform: translateX(100%);
+  opacity: 0;
+}

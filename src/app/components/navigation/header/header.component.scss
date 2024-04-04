@@ -1,0 +1,35 @@
+:host {
+  --padding-inline: .5rem;
+  --padding-block: 1.2rem;
+
+  position: absolute;
+  z-index: 40;
+  top: 0;
+  left: 0;
+  width: calc(100% - 2 * var(--padding-inline));
+  padding-top: calc(var(--safe-top) + var(--padding-block));
+  padding-inline: var(--padding-inline);
+  padding-bottom: var(--padding-block);
+  background-color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0 0 10px 10px;
+  box-shadow: var(--box-shadow);
+  gap: 1rem;
+  transition: box-shadow .3s;
+}
+
+:host.transparent {
+  background-color: var(--background);
+  border-radius: 0;
+  box-shadow: none;
+}
+
+:host.transparent.scroll {
+  box-shadow: var(--box-shadow);
+}
+
+app-logo {
+  margin-left: 1rem;
+}

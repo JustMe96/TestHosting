@@ -1,0 +1,59 @@
+<app-header [backRoute]="'/settings'" [transparent]="true" [title]="'Utenti'">
+  <app-button class="icon" [icon]="'fa-solid fa-plus'" routerLink="/add-admin"></app-button>
+</app-header>
+
+<header>
+  <div class="filters">
+    <app-button #filters_btn class="icon" [icon]="'fa-solid fa-bars-staggered'"></app-button>
+    <floating-panel [trigger]="filters_btn.hostElem"
+      (onOpen)="updateFiltersUI(email_filters, agency_filters, agency_number_filters)">
+      <inline-radio-buttons #email_filters [options]="filters.email"></inline-radio-buttons>
+      <inline-radio-buttons #agency_filters [options]="filters.agency"></inline-radio-buttons>
+      <inline-radio-buttons #agency_number_filters [options]="filters.agency_number"></inline-radio-buttons>
+      <app-button [text]="'Cancella Filtri'" class="right" text-color="error"
+        (click)="clearFilters(email_filters, agency_filters, agency_number_filters)"></app-button>
+    </floating-panel>
+  </div>
+  <app-searchbar (search)="filters.search = $event"></app-searchbar>
+  <app-button background="primary" [text]="'Cerca'"></app-button>
+</header>
+
+<div class="divider-1"></div>
+
+<div *ngIf="(!users || users.length === 0) && !utils.loading" class="placeholder">
+  <div class="divider-3"></div>
+  <p class="subtitle">Non ci sono utenti registrati per ora.</p>
+  <app-button [icon]="'fa-solid fa-plus'" [text]="'Aggiungi'" background="primary" [routerLink]="['/add-admin']"></app-button>
+</div>
+
+<!-- USER LIST -->
+<div *ngIf="users && users.length !== 0" class="scroll-content">
+  <div class="divider-3"></div>
+  <div class="actions" id="actions">
+    <app-checkbox [label]="'Seleziona tutto'" [(checked)]="allSelected"
+      (checkedChange)="$event ? selectAll() : deselectAll()"></app-checkbox>
+    <app-button class="right icon" [icon]="'fa-solid fa-trash-can'" text-color="error" (click)="deleteUsers()"></app-button>
+  </div>
+
+  <div class="divider-1"></div>
+  <app-accordion *ngFor="let user of users; let i = index">
+    <!-- HEADER -->
+    <app-accordion-header>
+      <app-checkbox [(checked)]="selected[i]"
+        (checkedChange)="$event ? onItemSelect(i) : onItemDeselect(i)"></app-checkbox>
+      <app-avatar class="small"></app-avatar>
+      <app-info-item class="vertical flex no-padding" [key]="user.first_name + ' ' + user.last_name"
+        [value]="user.email"></app-info-item>
+    </app-accordion-header>
+    <!-- CONTENT -->
+    <app-accordion-content>
+      <div class="divider-1"></div>
+      <app-info-item class="small" [key]="'Nome'" [value]="user.first_name + ' ' + user.last_name"></app-info-item>
+      <app-info-item class="small" [key]="'Email'" [value]="user.email"></app-info-item>
+      <app-info-item class="small" [key]="'Stato'" [value]="user.user_status"></app-info-item>
+      <div class="actions-end">
+        <app-button class="icon" [icon]="'fa-solid fa-pen-to-square'" [routerLink]="['/add-admin', {id: user.code}]"></app-button>
+      </div>
+    </app-accordion-content>
+  </app-accordion>
+</div>
