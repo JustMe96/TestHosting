@@ -1,0 +1,145 @@
+{
+  "configVersion": 1,
+  "timestamp": 1712261950681,
+  "index": "https://JustMe96.gihub.io/TestHosting/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://JustMe96.gihub.io/TestHosting/chunk-M3NVE43A.js",
+        "https://JustMe96.gihub.io/TestHosting/chunk-MKX2GMS5.js",
+        "https://JustMe96.gihub.io/TestHosting/favicon.ico",
+        "https://JustMe96.gihub.io/TestHosting/index.html",
+        "https://JustMe96.gihub.io/TestHosting/main-RLSXJ7TT.js",
+        "https://JustMe96.gihub.io/TestHosting/manifest.webmanifest",
+        "https://JustMe96.gihub.io/TestHosting/polyfills-RT5I6R6G.js",
+        "https://JustMe96.gihub.io/TestHosting/styles-3SBPY6DD.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://JustMe96.gihub.io/TestHosting/assets/fonts/Roboto/Roboto-Black.ttf",
+        "https://JustMe96.gihub.io/TestHosting/assets/fonts/Roboto/Roboto-BlackItalic.ttf",
+        "https://JustMe96.gihub.io/TestHosting/assets/fonts/Roboto/Roboto-Bold.ttf",
+        "https://JustMe96.gihub.io/TestHosting/assets/fonts/Roboto/Roboto-BoldItalic.ttf",
+        "https://JustMe96.gihub.io/TestHosting/assets/fonts/Roboto/Roboto-Italic.ttf",
+        "https://JustMe96.gihub.io/TestHosting/assets/fonts/Roboto/Roboto-Light.ttf",
+        "https://JustMe96.gihub.io/TestHosting/assets/fonts/Roboto/Roboto-LightItalic.ttf",
+        "https://JustMe96.gihub.io/TestHosting/assets/fonts/Roboto/Roboto-Medium.ttf",
+        "https://JustMe96.gihub.io/TestHosting/assets/fonts/Roboto/Roboto-MediumItalic.ttf",
+        "https://JustMe96.gihub.io/TestHosting/assets/fonts/Roboto/Roboto-Regular.ttf",
+        "https://JustMe96.gihub.io/TestHosting/assets/fonts/Roboto/Roboto-Thin.ttf",
+        "https://JustMe96.gihub.io/TestHosting/assets/fonts/Roboto/Roboto-ThinItalic.ttf",
+        "https://JustMe96.gihub.io/TestHosting/assets/icons/icon-128x128.png",
+        "https://JustMe96.gihub.io/TestHosting/assets/icons/icon-144x144.png",
+        "https://JustMe96.gihub.io/TestHosting/assets/icons/icon-152x152.png",
+        "https://JustMe96.gihub.io/TestHosting/assets/icons/icon-192x192.png",
+        "https://JustMe96.gihub.io/TestHosting/assets/icons/icon-384x384.png",
+        "https://JustMe96.gihub.io/TestHosting/assets/icons/icon-512x512.png",
+        "https://JustMe96.gihub.io/TestHosting/assets/icons/icon-72x72.png",
+        "https://JustMe96.gihub.io/TestHosting/assets/icons/icon-96x96.png",
+        "https://JustMe96.gihub.io/TestHosting/media/Roboto-Black-N3JSMGNF.ttf",
+        "https://JustMe96.gihub.io/TestHosting/media/Roboto-BlackItalic-Q4DQVNXP.ttf",
+        "https://JustMe96.gihub.io/TestHosting/media/Roboto-Bold-YNVD7YCC.ttf",
+        "https://JustMe96.gihub.io/TestHosting/media/Roboto-BoldItalic-UDVRGYMT.ttf",
+        "https://JustMe96.gihub.io/TestHosting/media/Roboto-Light-DLKQXCNL.ttf",
+        "https://JustMe96.gihub.io/TestHosting/media/Roboto-LightItalic-EZWBKOF2.ttf",
+        "https://JustMe96.gihub.io/TestHosting/media/Roboto-Medium-SICMFKQK.ttf",
+        "https://JustMe96.gihub.io/TestHosting/media/Roboto-MediumItalic-X7VW5CZA.ttf",
+        "https://JustMe96.gihub.io/TestHosting/media/Roboto-Regular-2C6IPKAZ.ttf",
+        "https://JustMe96.gihub.io/TestHosting/media/Roboto-Thin-SNTZUTYN.ttf",
+        "https://JustMe96.gihub.io/TestHosting/media/Roboto-ThinItalic-VWZDITN2.ttf",
+        "https://JustMe96.gihub.io/TestHosting/media/fa-brands-400-4RSXLDQT.woff2",
+        "https://JustMe96.gihub.io/TestHosting/media/fa-brands-400-RP3MZ4AX.ttf",
+        "https://JustMe96.gihub.io/TestHosting/media/fa-regular-400-6ODLNN6G.woff2",
+        "https://JustMe96.gihub.io/TestHosting/media/fa-regular-400-VE33OVPX.ttf",
+        "https://JustMe96.gihub.io/TestHosting/media/fa-solid-900-BALFL4QR.ttf",
+        "https://JustMe96.gihub.io/TestHosting/media/fa-solid-900-ZZETRIYD.woff2",
+        "https://JustMe96.gihub.io/TestHosting/media/fa-v4compatibility-5WGRUVBC.woff2",
+        "https://JustMe96.gihub.io/TestHosting/media/fa-v4compatibility-7DCIFHD7.ttf"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://JustMe96.gihub.io/TestHosting/assets/fonts/Roboto/Roboto-Black.ttf": "3f8e401d808f6ce84b542266726514ac8be73171",
+    "https://JustMe96.gihub.io/TestHosting/assets/fonts/Roboto/Roboto-BlackItalic.ttf": "03d6e3747d862385dbe48e8296385b9236101a62",
+    "https://JustMe96.gihub.io/TestHosting/assets/fonts/Roboto/Roboto-Bold.ttf": "62442a18a9fe9457c1afeabf683d263a691b7798",
+    "https://JustMe96.gihub.io/TestHosting/assets/fonts/Roboto/Roboto-BoldItalic.ttf": "2f10ad9e8cab0880182705c4e0fbaeabae706e64",
+    "https://JustMe96.gihub.io/TestHosting/assets/fonts/Roboto/Roboto-Italic.ttf": "65f3f6a7e1bd2fa6f2df35e4b07775d7f1dde4f0",
+    "https://JustMe96.gihub.io/TestHosting/assets/fonts/Roboto/Roboto-Light.ttf": "18788c5d630fa695f9283f6393bfa541b2031508",
+    "https://JustMe96.gihub.io/TestHosting/assets/fonts/Roboto/Roboto-LightItalic.ttf": "6e01f9df9449565697032b002706a94b51862bbe",
+    "https://JustMe96.gihub.io/TestHosting/assets/fonts/Roboto/Roboto-Medium.ttf": "3c6a09fcc6a454924c81af7dff94fc6d399ed79b",
+    "https://JustMe96.gihub.io/TestHosting/assets/fonts/Roboto/Roboto-MediumItalic.ttf": "b3aa2d8f16d5a331fdced82f213a052b204eaca0",
+    "https://JustMe96.gihub.io/TestHosting/assets/fonts/Roboto/Roboto-Regular.ttf": "56c5c0d38bde4c1f1549dda43db37b09c608aad3",
+    "https://JustMe96.gihub.io/TestHosting/assets/fonts/Roboto/Roboto-Thin.ttf": "58c733e22bceeaf9609ce578eca92ac303c6d92f",
+    "https://JustMe96.gihub.io/TestHosting/assets/fonts/Roboto/Roboto-ThinItalic.ttf": "cc79d5a23bd0ec08b1d99f5390bf33cacc3082f4",
+    "https://JustMe96.gihub.io/TestHosting/assets/icons/icon-128x128.png": "f912963bdc6d5a38d8f1dd0afbaab2ce8d657acb",
+    "https://JustMe96.gihub.io/TestHosting/assets/icons/icon-144x144.png": "b155fd5f2fd5d2ea7760721063003c4cd95fd783",
+    "https://JustMe96.gihub.io/TestHosting/assets/icons/icon-152x152.png": "eae6e0f0c8afb8aaae339e2a569b43e9238e5e6c",
+    "https://JustMe96.gihub.io/TestHosting/assets/icons/icon-192x192.png": "15c4180454633880d98674aa7394656196c91584",
+    "https://JustMe96.gihub.io/TestHosting/assets/icons/icon-384x384.png": "94a915751ef6c9282df9aea405ad679230631814",
+    "https://JustMe96.gihub.io/TestHosting/assets/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
+    "https://JustMe96.gihub.io/TestHosting/assets/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
+    "https://JustMe96.gihub.io/TestHosting/assets/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
+    "https://JustMe96.gihub.io/TestHosting/chunk-M3NVE43A.js": "bb4c60363934142c07bca4d70ce215fd45543d9c",
+    "https://JustMe96.gihub.io/TestHosting/chunk-MKX2GMS5.js": "0e70c426e23317fca38654376dd8c116be4db84f",
+    "https://JustMe96.gihub.io/TestHosting/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
+    "https://JustMe96.gihub.io/TestHosting/index.html": "1f94526cbcf0d9d43741753c83ddda6b2b0f648d",
+    "https://JustMe96.gihub.io/TestHosting/main-RLSXJ7TT.js": "c66e885f899f7c1e04dc5cedc24ff005bbe6eff5",
+    "https://JustMe96.gihub.io/TestHosting/manifest.webmanifest": "dcdb3c765bb61db485d964880106589b7279ff02",
+    "https://JustMe96.gihub.io/TestHosting/media/Roboto-Black-N3JSMGNF.ttf": "3f8e401d808f6ce84b542266726514ac8be73171",
+    "https://JustMe96.gihub.io/TestHosting/media/Roboto-BlackItalic-Q4DQVNXP.ttf": "03d6e3747d862385dbe48e8296385b9236101a62",
+    "https://JustMe96.gihub.io/TestHosting/media/Roboto-Bold-YNVD7YCC.ttf": "62442a18a9fe9457c1afeabf683d263a691b7798",
+    "https://JustMe96.gihub.io/TestHosting/media/Roboto-BoldItalic-UDVRGYMT.ttf": "2f10ad9e8cab0880182705c4e0fbaeabae706e64",
+    "https://JustMe96.gihub.io/TestHosting/media/Roboto-Light-DLKQXCNL.ttf": "18788c5d630fa695f9283f6393bfa541b2031508",
+    "https://JustMe96.gihub.io/TestHosting/media/Roboto-LightItalic-EZWBKOF2.ttf": "6e01f9df9449565697032b002706a94b51862bbe",
+    "https://JustMe96.gihub.io/TestHosting/media/Roboto-Medium-SICMFKQK.ttf": "3c6a09fcc6a454924c81af7dff94fc6d399ed79b",
+    "https://JustMe96.gihub.io/TestHosting/media/Roboto-MediumItalic-X7VW5CZA.ttf": "b3aa2d8f16d5a331fdced82f213a052b204eaca0",
+    "https://JustMe96.gihub.io/TestHosting/media/Roboto-Regular-2C6IPKAZ.ttf": "56c5c0d38bde4c1f1549dda43db37b09c608aad3",
+    "https://JustMe96.gihub.io/TestHosting/media/Roboto-Thin-SNTZUTYN.ttf": "58c733e22bceeaf9609ce578eca92ac303c6d92f",
+    "https://JustMe96.gihub.io/TestHosting/media/Roboto-ThinItalic-VWZDITN2.ttf": "cc79d5a23bd0ec08b1d99f5390bf33cacc3082f4",
+    "https://JustMe96.gihub.io/TestHosting/media/fa-brands-400-4RSXLDQT.woff2": "4022f95e001d734ca8f082b8e7627abd205609ec",
+    "https://JustMe96.gihub.io/TestHosting/media/fa-brands-400-RP3MZ4AX.ttf": "acaf5320927fc169b0089f8f25afb9cfbad353b4",
+    "https://JustMe96.gihub.io/TestHosting/media/fa-regular-400-6ODLNN6G.woff2": "2ed706340547d19c10a409ee02fb08f3d52ff670",
+    "https://JustMe96.gihub.io/TestHosting/media/fa-regular-400-VE33OVPX.ttf": "784b4d493ab9a7996b07e4f9f71674b2f2e43e22",
+    "https://JustMe96.gihub.io/TestHosting/media/fa-solid-900-BALFL4QR.ttf": "54217d79e7b35011798d712a96d1c4ea08a0ca70",
+    "https://JustMe96.gihub.io/TestHosting/media/fa-solid-900-ZZETRIYD.woff2": "1aae708e3b94ee981b452a918d28ed037fbb5e18",
+    "https://JustMe96.gihub.io/TestHosting/media/fa-v4compatibility-5WGRUVBC.woff2": "7009126c938f8dad77426a5b44bc21685ee8dfec",
+    "https://JustMe96.gihub.io/TestHosting/media/fa-v4compatibility-7DCIFHD7.ttf": "e47d5bf853d39ec86e62f4897cbcac7dd5c3b5b9",
+    "https://JustMe96.gihub.io/TestHosting/polyfills-RT5I6R6G.js": "fe9f024576f21ff6314cf8f8332cde58b9a12416",
+    "https://JustMe96.gihub.io/TestHosting/styles-3SBPY6DD.css": "799eb472f2f8374b8220020ed29c409c49ef7187"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
